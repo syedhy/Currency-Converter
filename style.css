@@ -1,0 +1,272 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Sofia Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-image: url(./imgs/IMG_1713.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 3vmin;
+    text-align: center;
+}
+
+
+
+.container {
+    background-color: white;
+    max-width: 80vmax;
+    width: fit-content;
+    height: 40vmin;
+    border: solid rgb(0, 0, 0) 0.15rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+
+.cal {
+    gap: .5rem;
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+/* Amount section */
+.amount {
+    display: flex;
+    flex-direction: column;
+    border: solid #e0e0e0 0.1rem;
+    border-radius: 0.3rem;
+    width: 22vw;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.amount input {
+    font-size: 23px;
+    width: 100%;
+    height: 40px;
+    padding-top: 0.15rem;
+    border: none;
+    padding-left: 0.3rem;
+}
+
+.amount p {
+    color: grey;
+    font-size: 12px;
+}
+
+/* From and Tosection */
+.fromContainer , .toContainer {
+    border: solid #e0e0e0 0.1rem;
+    border-radius: 0.3rem;
+    width: 22vw;
+    padding: 0.4rem;
+    min-width: 8rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.fromContainer .fromMenu ,.toContainer .toMenu {
+    padding-top: 0.5rem;
+}
+
+.fromContainer p , .toContainer p {
+    color: grey;
+    font-size: 12px;
+}
+
+.fromMenu , .toMenu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem ;
+}
+
+.fromMenu img , .toMenu img{
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.fromMenu select , .toMenu select{
+    border: none;
+    width: 88%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.fromContainer:hover , .toContainer:hover , .amount:hover , .fromContainer:hover #selectFrom , .toContainer:hover #selectTo , .amount:hover input {
+    background-color: #E0E0E0;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: solid #e0e0e0;
+    color: #e0e0e0;
+
+}
+
+.icon:hover {
+    background-color: black;
+    border-color: black;
+}
+
+
+/* Result section */
+.res {
+    display: flex;
+    margin-top: 6.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message1 {
+    font-size: 1.5vmin;
+    color: #6d6d6d;
+
+}
+
+.message2 {
+    font-size: 6vmin;
+}
+
+
+.btn button {
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+
+.hidden {
+    display: none;
+}
+.amount input:focus, .fromContainer select:focus, .toContainer select:focus {
+    outline: none;
+}
+@media (max-width:1000px) {
+
+    .icon {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        height: fit-content;
+        width: 80vmin;
+        height: fit-content;
+        min-width: 20vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .amount {
+        margin-bottom: 2rem;
+        min-width: none;
+        margin-right: 0px;
+        padding-left: 1rem;
+        width: 70vmin;
+    }
+
+    .amount input {
+        padding-top: 1rem;
+    }
+
+    .fromContainer , .toContainer {
+        min-width: none;
+        padding-left: 1rem;
+        width: 70vmin;
+    }
+
+    .fromContainer select , .toContainer select  {
+        width:90%;
+    }
+    .dropdown {
+        margin-top: 1rem;
+    }
+
+    .icon {
+        transform: rotate(90deg);
+        display: flex;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .res {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        width: 70vmin;
+        padding-bottom: 2rem;
+    }
+
+    .rate {
+        margin-left: 0.5vmin;
+    }
+    .message1 {
+        text-align: center;
+        font-size: 3.5vmin;
+        padding-left: 0.5rem;
+    
+    }
+    
+    .message2 {
+        text-align: center;
+        font-size: 8vmin;
+    }
+
+    .btn {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

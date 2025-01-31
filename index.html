@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2>Convert USD to INR</h2>    
+
+        <div class="cal">
+
+            <div class="amount">
+                <p>Amount</p>
+                <input type="text" value="10">
+            </div>
+    
+            <div class="fromContainer">
+                <p>From</p>
+                <div class="fromMenu dropdown">
+                    <img src="https://flagsapi.com/US/shiny/64.png">
+                    <select name="currFrom" id="selectFrom">
+                    </select>
+                </div>
+                
+            </div>
+    
+            <div class="icon">
+                <i class="fa-solid fa-right-left" style="color: #e0e0e0;"></i>
+            </div>
+    
+            <div class="toContainer">
+                <p>To</p>
+                <div class="toMenu dropdown">
+                    <img src="https://flagsapi.com/IN/shiny/64.png">
+                    <select name="currTo" id="selectTo">
+                    </select>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <div class="res">
+
+            <div class="rate">
+
+                <div class="message1">
+                </div>
+                <div class="message2">
+                </div>
+
+            </div>
+            
+    
+            <div class="btn">
+                <button>Convert</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./codes.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
