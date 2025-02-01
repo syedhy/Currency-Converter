@@ -103,6 +103,7 @@ h2 {
 }
 
 .fromMenu select , .toMenu select{
+    background-color: transparent;
     border: none;
     width: 88%;
     cursor: pointer;
